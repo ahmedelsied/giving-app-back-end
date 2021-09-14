@@ -1,0 +1,13 @@
+Options +FollowSymLinks +ExecCGI
+
+<IfModule mod_headers.c> 
+  Header set X-XSS-Protection "1; mode=block" 
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.mp3|\.gif|\.jpeg|\.svg|\.css|\.js|\.woff2|\.woff|\.ttf|\.map)$
+RewriteRule ^(.*)  index.php [QSA]
+
+</IfModule>

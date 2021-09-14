@@ -1,0 +1,7 @@
+<?php
+
+// CONTROLLERS
+define('ADMIN_CONTROLLERS' , CONTROLLERS.'admin' . DS);
+define('PUBLIC_CONTROLLERS' , CONTROLLERS.'main' . DS);
+define('USER_CONTROLLERS' , CONTROLLERS.'user' . DS);
+define('ERRORS_CONTROLLERS' , CONTROLLERS.'errors' . DS);

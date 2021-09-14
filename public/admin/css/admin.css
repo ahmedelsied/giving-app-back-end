@@ -1,0 +1,243 @@
+/* Start Public Admin Style */
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.192);
+    z-index: 1031;
+    display: none;
+}
+.navbar-nav>li>a{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.search-inpt{
+    padding: 6px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+.admin-logged{
+    margin-top: 90px;
+    padding: 10px;
+}
+.statistics-box{
+    margin: auto 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px #d0d0d0;
+    -webkit-box-shadow: 1px 1px 10px #d0d0d0;
+    -moz-box-shadow: 1px 1px 10px #d0d0d0;
+    -o-box-shadow: 1px 1px 10px #d0d0d0;
+    -ms-box-shadow: 1px 1px 10px #d0d0d0;
+    border-radius: 10px;
+    text-align: right;
+    height: 120px;
+}
+.ban-btn{
+    color: #d9534f !important;
+    box-shadow: 1px 1px 10px #cecece;
+    background-color: white;
+
+}
+.actions{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.filter{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.filter label{
+    margin-left: 10px;
+}
+/* Start Navbar */
+.navbar-nav>li{
+    width: 100%;
+    text-align: center;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-color: transparent;
+}
+/* End Navbar */
+/* Start Admin Login */
+.admin .form-control{
+    width: 30%;
+    margin: 20px auto;
+}
+.admin-login .login-parent {
+    margin-top: 10vw;
+}
+.admin-login .login-parent form{
+    margin: 40px auto;
+}
+.admin-login .login-parent form .login-btn{
+    padding: 5px 15px ;
+    border-radius: 10px;
+}
+/* End Admin Login */
+/* Start Messages */
+#reply_box{
+    display:none;
+    position: fixed;
+    width: 35%;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 1032;
+}
+#reply_box h4{
+    margin: 10px;
+}
+#reply_box .inpt-parent{
+    margin: 20px;
+}
+#reply_box textarea{
+    height: 110px;
+    resize: none;
+}
+/* End Messages */
+/* Start Admin Dashboard */
+.admin-dashboard #statistics .total-users{
+    color: #4B3AF5;
+
+}
+.admin-dashboard #statistics .opened-chats{
+    color: #2B3DA7;
+}
+.admin-dashboard #statistics .total-problems{
+    color: #FF0361;
+}
+.admin-dashboard #statistics .total-banned-users{
+    color: #B745D2;
+}
+.admin-dashboard #statistics .statistics-box .statistics-items{
+    margin-top: 25px;
+    padding: 0px 20px;
+}
+.admin-dashboard #statistics .statistics-box .statistics-items i{
+    width: 50px;
+    height: 50px;
+    transform: translate(25%,-25%);
+    -webkit-transform: translate(25%,-25%);
+    -moz-transform: translate(25%,-25%);
+    -o-transform: translate(25%,-25%);
+    -ms-transform: translate(25%,-25%);
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+.admin-dashboard #statistics .statistics-box .statistics-items i.fa-users{
+    background-color: #4b3af540;
+}
+.admin-dashboard #statistics .statistics-box .statistics-items i.fa-comment-alt{
+    background-color: #2b3ea540;
+}
+.admin-dashboard #statistics .statistics-box .statistics-items i.fa-exclamation-triangle{
+    background-color: #ff035f40;
+}
+.admin-dashboard #statistics .statistics-box .statistics-items i.fa-ban{
+    background-color: #b845d240;
+}
+.admin-dashboard #user-curve{
+    height: 400px;
+}
+#latest-users,#latest-banned-users{
+    margin-top: 50px;
+}
+#latest-users h4,#latest-banned-users h4{
+    margin-bottom: 2pc;
+}
+/* End Admin Dashboard */
+/* Start Edit Questions */
+#edit-question-form{
+    margin-top: 50px;
+}
+#edit-question-form .edit-parent{
+    margin-top: 65px;
+}
+#edit-question-form input[type="radio"]{
+    display: block;
+    margin-top: 20px;
+}
+#edit-question-form .question{
+    color: red;
+}
+#edit-question-form .form-control{
+    margin-top:10px;
+    margin-bottom:10px
+}
+#add-answer{
+    margin: 20px auto;
+}
+.answer-parent .close{
+    padding-top: 20px;
+}
+/* End Edit Questions */
+
+/* Start Site Settings */
+#site-settings textarea{
+    resize: none !important;
+    height: 150px;
+}
+/* End Site Settings */
+
+@media (min-width: 769px){
+    .admin-logged{
+        margin-right: 225px;
+    }
+    .side-nav{
+        position: fixed;
+        top: 0;
+        right:0;
+        width: 225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: transparent;
+        bottom: 0;
+        overflow-x: hidden;
+        margin: 0;
+    }
+    .navbar-brand{
+        display: contents;
+    }
+    .side-nav .navbar-brand img{
+        display: inline-block;
+    }
+    .admin-dashboard #user-curve{
+        margin-top: 160px;
+    }
+}
+@media (max-width:992px) {
+    .statistics-box{
+        width: 50%;
+        margin:20px auto;
+    }
+}
+@media (max-width:768px) {    
+    .admin .form-control{
+        width: 50%;
+    }
+    .statistics-box{
+        width: 50%;
+        margin:20px auto;
+    }
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+        background-color: white;
+    }
+    .navbar-default .navbar-toggle,.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+        border:none;
+        background-color: white;
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #4d62d5;
+    }
+    .navbar-default .navbar-brand{
+        padding: 0 10px;
+    }
+}
