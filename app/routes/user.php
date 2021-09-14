@@ -1,9 +1,6 @@
 <?php
 namespace routes;
 
-// Should removed
-$this->routes->get("/api/user/delete-all","api\user\will_delete\database_actions@delete_all");
-
 // Start Auth Routes
 $this->routes->post("/api/user/login","api\user\auth\login_controller@login");
 $this->routes->post("/api/user/login-with-huawei","api\user\auth\login_controller@login_with_huawei");
