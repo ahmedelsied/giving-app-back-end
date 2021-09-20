@@ -7,6 +7,3 @@
 - MySql
 - OOP
 - MVC
-- Html
-- Css
-- Javascript\JQuery
